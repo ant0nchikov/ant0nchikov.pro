@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="">
     <link rel="shortcut icon" href="icon.png" type="image/x-icon">
     <title>ant0nchikov - портфолио/дневник разработчка.</title>
@@ -12,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
-
 
 
   <script>
@@ -41,16 +41,16 @@
 
   </head>
 
-  <body cz-shortcut-listen="true">
+  <body cz-shortcut-listen="true" style="background-color: #F3F4F6;">
 
     <div class="container">
 
 
  <div class="page-header">
         <h1 style="font-family: 'Russo One', sans-serif;">ant&#216;nchikov.pro</h1>
-        <p class="lead" style="font-style: oblique; font-family: 'Open Sans', sans-serif;">«При помощи C вы легко можете выстрелить себе в ногу. При помощи C++ это сделать сложнее, но если это произойдёт, вам оторвёт всю ногу целиком» - Бьёрн Страуструпd.</p>
+        <p class="lead" style="font-style: oblique; font-family: 'Open Sans', sans-serif;">«Каждый, имеющий доступ к глобальной сети интенет, даже примерно не представляет, чем владеет...»</p>
       </div>
-      <div class="navbar navbar-default" role="navigation" style=" border: 1px solid #ddd;">
+      <div class="navbar navbar-default" role="navigation" style=" border: 1px solid #ddd; background-color: #FFFFFF;">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -65,6 +65,7 @@
               <li><a class="nav-link active"data-toggle="modal" role="tab"  aria-selected="true"  href="#navbar" onclick="show_div('home')">Главная</a></li>
               <li><a class="nav-link active"data-toggle="modal" role="tab"  aria-selected="true"  href="#navbar" onclick="show_div('summary')">Резюме</a></li>
               <li><a class="nav-link active"data-toggle="modal" role="tab"  aria-selected="true"  href="#navbar" onclick="show_div('portfolio')">Портфолио</a></li>
+              <li><a class="nav-link active"data-toggle="modal" role="tab"  aria-selected="true"  href="#navbar" onclick="show_div('liter')">Техническая литература</a></li>
               <li><a class="nav-link active"data-toggle="modal" role="tab"  aria-selected="true"  href="#navbar" onclick="show_div('feedback')">Обратная связь</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -82,14 +83,7 @@
       <div class="row row-offcanvas row-offcanvas-right">
 
           <div id="texts" class="col-xs-12 col-sm-9">
-<div id="home" class="row" style="background-color: #f8f8f8; border-radius: 5px; margin-bottom: 10px;     border: 1px solid #ddd;" >
-                          <div id="home" class="col-12 col-sm-12 col-lg-12" >
-              <h2 style="text-align: center; font-family: 'Russo One', serif;">Добро пожаловать на сайт!</h2>
-              <p style="text-align: center; font-family: 'Open Sans', serif;">Продолжая использовать этот сайт, вы даете согласие на обработку файлов cookie, пользовательских данных (сведения о местоположении; тип и версия ОС; тип и версия Браузера; тип устройства и разрешение его экрана; источник откуда пришел на сайт пользователь; с какого сайта или по какой рекламе; в целях функционирования сайта, проведения ретаргетинга и проведения статистических исследований и обзоров). Если вы не хотите, чтобы ваши данные обрабатывались, покиньте сайт.</p>
-              <p style="text-align: center; font-family: 'Russo One', serif;"><a style="margin-right: 4px; margin-left: 8px;" class="btn btn-primary" href="#" role="button">Принять</a><a class="btn btn-danger" href="https://www.google.com/" role="button">Покинуть сайт</a></p>
 
-            </div>
-            </div>
 
 
 
@@ -119,53 +113,42 @@
 
 
 
-          <div id="summary" class="row" style="background-color: #f8f8f8; border-radius: 5px; font-family: 'Russo One', serif;  border: 1px solid #ddd;" >
-            <div id="summary" class="col-12 col-sm-12 col-lg-12" style="text-align: center;">
-              <h2>Антончиков Александр Александрович</h2>
+          <div id="summary" class="row" style="background-color: #FFFFFF; border-radius: 5px; border: 1px solid #ddd;" >
+            <div id="summary" class="col-12 col-sm-12 col-lg-12">
+            
 
-  <div class="row" id="summary" style="margin-top: 5px;">
-    <div class="col-sm-6" id="summary">
-      <img src="2.jpg" style="height: 220px; width: 200px;">
+              <div id="summary" class="row" style="margin-bottom: 20px;">
+   
+    <div id="summary" class="col-xs-6 col-sm-6 col-md-8 col-lg-8">
+      
+            <p><b>ФИО:</b> Антончиков Александр Александрович.</p>
+            <p><b>Дата рождения:</b> 06.03.2002 (17 лет)</p>
+            <p><b>Гражданство:</b> Республика Беларусь.</p>
+            <p><b>Место жительства:</b> Санкт-Петербург, Россия.</p>
+            <p><b>Место работы:</b> Самозанятый.</p>
+            <p><b>Опыт работы:</b> 1 Год.</p>
+            <p><b>История мест работы:</b> </p>
     </div>
-    <div class="col-sm-6" id="summary" style="margin-top: 20px; "><h4>
-      <p style="margin-top: 20px; ">&#9733; Web-разработчик &#9733;</p>
-      <p style="margin-top: 20px; ">&#9733; C++/C# разработчик &#9733;</p>
-      <p style="margin-top: 20px; ">&#9733; Разработчик ПО &#9733;</p>
-      <p style="margin-top: 20px; ">&#9733; Разработчик приложений &#9733;</p>
-      <p style="margin-top: 20px; ">&#9733; Инди разработчик &#9733;</p></h4>
-    </div>
-
-  </div>
-  <hr/>
-  <h3 style="text-align: center; text-decoration:underline; margin-bottom: 10px;">Навыки</h3>
-<hr/>
-
-  <div class="row" id="summary" style="margin: 0px auto;">
-
-    <div class="col-sm-12" id="summary" >
-       <div class="col-sm-2" id="summary" class="img01" style="margin-top: 5px;"><div id="summary" class="img1"></div></div>
-       <div class="col-sm-2" id="summary" style="margin-top: 8px;"><div id="summary" class="img2"></div></div>
-       <div class="col-sm-2" id="summary" style="margin-top: 8px;"><div id="summary" class="img3"></div></div>
-       <div class="col-sm-2" id="summary" style="margin-top: 8px;"><div id="summary" class="img4"></div></div>
-       <div class="col-sm-2" id="summary" style="margin-top: 8px;"><div id="summary" class="img5"></div></div>      
-    </div>
-    <hr/>
-  </div>
-       <style type="text/css"
-      >@media (min-width: 767px){
-        #summary.img1{
-        margin-left: 80px;
-        }
-        #summary.img2{
-        margin-left: 45px;
-        }
-        #summary.img3{
-        margin-left: 20px;
-        }
-
-
-</style>
-     <hr/>         
+     <div id="summary" class="col-xs-4 col-sm-4 col-md-6 col-lg-4 text-right"><img src="index.svg" style="margin: 5px auto"></div>
+   </div>
+            <p style="margin-top: -20px"><b>Образование:</b> Санкт-Петербургский государственный университет телекоммуникаций им. проф. М.А.Бонч-Бруевича</p>
+            <p>  ➥  <b>Период обучения:</b> 2020 - 2024 гг.</p>
+            <p>  ➥  <b>Факультет:</b> Системы обработки информации и управления, Информатика и вычислительная техника.</p>
+            <p>  ➥  <b>Специальность:</b> Информатика и вычислительная техника.</p>
+            <p><b>Ключевые навыки:</b><span class="badge badge-dark" style="background-color: black; color: white; margin-left: 3px;">Черный пояс в поисковой системе Google</span> </p> 
+            <p><b>О себе:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p> 
             </div>
           </div>
 
@@ -177,7 +160,7 @@
             </div>
           </div>
 
-          <div id="feedback" class="row" style="background-color: #f8f8f8; border-radius: 5px;  border: 1px solid #ddd;" >
+          <div id="feedback" class="row" style="background-color: #ffffff; border-radius: 5px;  border: 1px solid #ddd;" >
             <div id="feedback" class="col-12 col-sm-12 col-lg-12" style="margin: 9px auto;">
               <form action = "https://formspree.io/YOUR_FORM_ID" method = "POST">
 <div id="feedback" class="form-group">
@@ -205,34 +188,47 @@
             </div>
           </div>
 
+
+<div id="liter" class="row">
+       <div id="liter" class="panel panel-danger">
+          <div id="liter" class="panel-heading" style="text-align: center; font-size: 20px;">Внимание</div>
+          <p style="text-align: center; font-family: 'Open Sans', serif; font-size: 14px;">Данный раздел - это своего рода домашняя библиотека, только в электронном варианте. Он посвящен моим друзьям, знакомым и всем тем, кто просто проходил мимо, но не прочь узнать что-то новое или освежить память актуальными (и не очень, но полезными во все времена) книгами. Ваше время не будет потрачено в пустую! (Все книги в этом разделе были прочитаны лично мной и я с уверенностью могу сказать, что время, которое вы потратите на прочтение этих книг или книги не будет пустой тратой времени). Нужную вам книгу вы можете приобрести на сайтах, которые имеют договор с авторами на реализацию их интеллектуальной собственности или же отправится в открытое плаванье по просторам интернета в поиске добрых людей, которые готовы буду с вами ею поделиться.</p>
+          </div>
+          </div>
+   
+  
+          <div id="liter" class="row">
+ <div id="liter" class="container">
+    <div id="liter" class="row" style="margin-bottom: 20px;">
+    <div id="liter" class="col-xs-12 col-sm-12 col-md-2 col-lg-2 text-center"><img  src="lafore.jpg" style="height: 145px; width: 115px; " ></div>
+    <div id="liter" class="col-xs-12 col-sm-12 col-md-10 col-lg-10"> 
+    <div id="liter" class="card-body" style="margin-top: 20px;">
+    <h5 class="card-title"><b>Название:</b> Объектно-ориентированное программирование в С++ </h5>
+    <p class="card-text"><b>Автор:</b> Лафоре Роберт </p>
+    <p class="card-text"><b>Издательство:</b><a href="https://www.piter.com/"> Питер</a></p>
+    <p class="card-text"><b>Количество страниц:</b> 928 </p>
+  </div></div>
+  </div>
+
+
+
+</div>
+</div>
+
+   
        
 
-          <div id="otzv" class="row" style="background-color: #f8f8f8; border-radius: 5px;" >
-            <div id="otzv" class="col-12 col-sm-12 col-lg-12">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-              <p><a class="btn btn-primary" href="http://bootstrap-3.ru/examples/offcanvas/#" role="button">Подробнее »</a></p>
-            </div>
-          </div>
-          <div id="otzv" class="row" style="background-color: #f8f8f8; border-radius: 5px; margin-top: 10px;" >
-            <div id="otzv" class="col-12 col-sm-12 col-lg-12">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-              <p><a class="btn btn-primary" href="http://bootstrap-3.ru/examples/offcanvas/#" role="button">Подробнее »</a></p>
-            </div>
-          </div>
-          <div id="otzv" class="row" style="background-color: #f8f8f8; border-radius: 5px; margin-top: 10px;" >
-            <div id="otzv" class="col-12 col-sm-12 col-lg-12">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-              <p><a class="btn btn-primary" href="http://bootstrap-3.ru/examples/offcanvas/#" role="button">Подробнее »</a></p>
-            </div>
-          </div>
-          <div id="otzv" class="row" style="background-color: #f8f8f8; border-radius: 5px; margin-top: 10px;" >
-            <div id="otzv" class="col-12 col-sm-12 col-lg-12">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-              <p><a class="btn btn-primary" href="http://bootstrap-3.ru/examples/offcanvas/#" role="button">Подробнее »</a></p>
+
+          <div id="link" class="row" style="background-color: #f8f8f8; border-radius: 5px;" >
+            <div id="link" class="col-12 col-sm-12 col-lg-12">
+             <p><a href="http://infbu.ru/"> http://infbu.ru/</a> - Подготовка к ЕГЭ по информатике (или просто хороший сайт для изучения информатики)</p>
+             <p><a href="http://kpolyakov.spb.ru/"> http://kpolyakov.spb.ru/</a> - Методические материалы и программное обеспечение для поддержки курса информатики в школе. Очень полезный сайт при изучении информатики.</p>
+             <p><a href="https://staminaon.com/ru/"> https://staminaon.com/ru/</a> - Клавиатурный тренажер (10-ти пальцевая печать)</p>
+             <p><a href="https://tablica-istinnosti.ru/ru/"> https://tablica-istinnosti.ru/ru/</a> - Калькулятор подробного преобразования логических выражений.</p>
+             <p><a href="http://www.php.su/lessons/"> http://www.php.su/lessons/</a> - Интерактивный учебник по PHP.</p>
+             <p><a href="https://learn.javascript.ru/"> http://www.php.su/lessons/</a> - Современный учебник по JavaScript.</p>
+             
+             
             </div>
           </div>
 
@@ -240,14 +236,14 @@
 
         <div class="col-xs-12 col-sm-3 col-lg-3 sidebar-offcanvas" id="sidebar" role="navigation" style="text-align: center; font-family: 'Russo One', serif;">
           <div class="list-group">
-            <a href="#" class="list-group-item "data-toggle="modal" role="tab"  aria-selected="true" data-target="#modal2">Inf&#216;rmathics</a>
+            <a href="#" class="list-group-item "data-toggle="modal" role="tab"  aria-selected="true" data-target="#modal2">Inf&#216;rmathics.com</a>
             <a href="#" class="list-group-item "data-toggle="modal" role="tab"  aria-selected="true" data-target="#modal3">AthleticsInfo</a>
           </div>
           <div class="list-group">
-            <a href="#navbar" class="list-group-item" role="tab"  aria-selected="true" onclick="show_div('otzv')">Отзывы</a>
+            <a href="#navbar" class="list-group-item" role="tab"  aria-selected="true" onclick="show_div('link')">Полезные ссылки</a>
             <a href="#" class="list-group-item"data-toggle="modal" role="tab"  aria-selected="true" data-target="#modal7">Актуальные проекты</a>
-            <a href="#" class="list-group-item" role="tab"  aria-selected="true" data-toggle="modal" data-target="#modal9">Статистические данные</a>
-              <a href="#" class="list-group-item"data-toggle="modal" role="tab"  aria-selected="true" data-target="#exampleModalLong">Социальные сети</a>
+            <a href="#" class="list-group-item" role="tab"  aria-selected="true" data-toggle="modal" data-target="#modal9">О сайте</a>
+              <a href="#" class="list-group-item"data-toggle="modal" role="tab"  aria-selected="true" data-target="#exampleModalLong">Контакты</a>
             <a href="#" class="list-group-item"data-toggle="modal" role="tab"  aria-selected="true" data-target="#exampleModalLong1">Политика конфиденциальности</a>
             <a href="#" class="list-group-item"data-toggle="modal" role="tab"  aria-selected="true" data-target="#exampleModalLong">Политика использования cookie</a>
           </div>
@@ -480,4 +476,4 @@
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/js.js"></script>
   
-</body></html>
+</body></html>   
