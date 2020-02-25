@@ -15,6 +15,7 @@ body {
 .navbar {
   margin-bottom: 20px;
 }
+ 
 
 
 #articles{
@@ -46,7 +47,6 @@ body {
 	}
 	
 	
-
 
 
 .navbar-collapse a {
@@ -86,64 +86,3 @@ body {
 }
 
 
-   div.img1 {
-        background: url(3B.png); /* Путь к файлу с исходным рисунком  */
-        display: block; /* Рисунок как блочный элемент */
-        width: 80px; /* Ширина рисунка */
-        height: 80px; /*  Высота рисунка */
-        margin: 0px auto;
-
-      }
-      div.img1:hover {
-        background: url(3.png); /* Путь к файлу с заменяемым рисунком  */
-
-    }
-
-
-    div.img2 {
-        background: url(4B.png); /* Путь к файлу с исходным рисунком  */
-        display: block; /* Рисунок как блочный элемент */
-        width: 80px; /* Ширина рисунка */
-        height: 80px; /*  Высота рисунка */
-        margin: 0px auto;
-
-      }
-      div.img2:hover {
-        background: url(4.png); /* Путь к файлу с заменяемым рисунком  */
-    }
-
-
-    div.img3 {
-        background: url(5B.png); /* Путь к файлу с исходным рисунком  */
-        display: block; /* Рисунок как блочный элемент */
-        width: 80px; /* Ширина рисунка */
-        height: 80px; /*  Высота рисунка */
-        margin: 0px auto;
-
-      }
-      div.img3:hover {
-        background: url(5.png); /* Путь к файлу с заменяемым рисунком  */
-    }
-      div.img4 {
-        background: url(6B.png); /* Путь к файлу с исходным рисунком  */
-        display: block; /* Рисунок как блочный элемент */
-        width: 110px; /* Ширина рисунка */
-        height: 80px; /*  Высота рисунка */
-        margin: 0px auto;
-
-      }
-      div.img4:hover {
-        background: url(6.png); /* Путь к файлу с заменяемым рисунком  */
-    }
-
-      div.img5 {
-        background: url(7.png); /* Путь к файлу с исходным рисунком  */
-        display: block; /* Рисунок как блочный элемент */
-        width: 140px; /* Ширина рисунка */
-        height: 80px; /*  Высота рисунка */
-        margin: 0px auto;
-
-      }
-      div.img5:hover {
-        background: url(7B.png); /* Путь к файлу с заменяемым рисунком  */
-    }

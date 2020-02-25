@@ -7,11 +7,13 @@
     <meta name="author" content="">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="icon.png" type="image/x-icon">
-    <title>ant0nchikov - портфолио/дневник разработчка.</title>
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <title>Личное пространство/дневник/портфолио разработчка</title>
+    <link href="<?php bloginfo('template_directory') ?>/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
+
 
 
   <script>
@@ -37,6 +39,8 @@
   })
 })
   </script>
+
+      
 
   </head>
 
@@ -85,24 +89,68 @@
 
 
 
-          <div id="home" class="row" style=" text-align: center; font-family: 'Open Sans', serif;"  >
-  <div id="home" class="col-12 col-sm-12 col-lg-12" style="background-color: #f8f8f8; border: 1px solid #ddd;border-radius: 5px; ">
-              <h2>Техническая литература</h2>
-              <p>цйуйцуfffцйуцйу</p>
-              <p><a class="btn btn-primary" href="http://bootstrap-3.ru/examples/offcanvas/#" role="button">Подробнее »</a></p>
+          
+
+
+
+ <?php           $posts = get_posts( array(
+  'numberposts' => 0,
+  'category'    => 0,
+  'orderby'     => 'date',
+  'order'       => 'DESC',
+  'include'     => array(),
+  'exclude'     => array(),
+  'meta_key'    => '',
+  'meta_value'  =>'',
+  'post_type'   => 'post',
+  'suppress_filters' => true,
+) );
+
+foreach( $posts as $post ){
+  setup_postdata($post);
+    ?>
+
+  <div id="home" class="row" style=" font-family: 'Open Sans', serif; margin-bottom: 10px;" >
+  <div id="home" class="col-12 col-sm-12 col-lg-12" style="background-color: #fff; border: 1px solid #ddd;border-radius: 5px; ">
+    <div id="home" class="col-12 col-sm-12 col-lg-12" style="margin-top: 3px;">
+
+
+        <div id="home" class="col-3 col-sm-3 col-md-3"><div id="home"  class="SP1"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Автор: <b style="font-family: 'Oxanium';">ant&#216;nchikov</b></div></div>
+         <div  id="home"class="col-4 col-sm-4 col-md-4"><div id="home" class="SP2"><span class="glyphicon glyphicon-bookmark"></span> Рубрика: <?php the_category(', '); ?></div></div>
+        <div  id="home"class="col-5 col-sm-5 col-md-5"><div id="home" class="SP2"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> Дата публикации:<?php the_time(' G:i /j/m/Y'); ?></div></div>
+        
+         </div>
+          <hr style="color: #ddd; background-color: #ddd;clear:both;height: 0.1px;">
+         <style type="text/css">
+           @media (min-width: 1000px) {#home.SP1{
+            text-align: left;}}
+            @media (min-width: 1000px) {#home.SP2{
+            text-align: right;}}
+            @media (max-width: 1000px) {#home.SP1{
+            text-align: center;}}
+          @media (max-width: 1000px) {#home.SP2{
+            text-align: center;}}
+         </style>
+
+               <div id="home" style="text-align: center;">
+              <h2><?php the_title (); ?></h2>
+              <p><?php the_excerpt (); ?></p>
+              <p><a class="btn btn-primary" href="<?php the_permalink( $post ); ?>" role="button">Подробнее »</a></p>
             </div>
+            </div>
+         </div>
+    <?php
+
+  }
+wp_reset_postdata();
+?>
+     
 
 
 
 
 
-
-
-
-
-
-
-          </div>
+          
 
                
   
@@ -116,35 +164,30 @@
 
               <div id="summary" class="row" style="margin-bottom: 20px;">
    
-    <div id="summary" class="col-xs-6 col-sm-6 col-md-8 col-lg-8">
+    <div id="summary" class="col-xs-6 col-sm-6 col-md-8 col-lg-8" style="margin-top: 3px;">
       
             <p><b>ФИО:</b> Антончиков Александр Александрович.</p>
             <p><b>Дата рождения:</b> 06.03.2002 (17 лет)</p>
             <p><b>Гражданство:</b> Республика Беларусь.</p>
             <p><b>Место жительства:</b> Санкт-Петербург, Россия.</p>
-            <p><b>Место работы:</b> Самозанятый.</p>
-            <p><b>Опыт работы:</b> 1 Год.</p>
+            <p><b>Место работы:</b> - </p>
+            <p><b>Опыт работы:</b> - </p>
             <p><b>История мест работы:</b> </p>
     </div>
-     <div id="summary" class="col-xs-4 col-sm-4 col-md-6 col-lg-4 text-right"><img src="index.svg" style="margin: 5px auto"></div>
+     <div id="summary" class="col-xs-4 col-sm-4 col-md-6 col-lg-4 text-right"><img src="<?php bloginfo('template_directory') ?>/img/index.svg" style="margin: 5px auto"></div>
    </div>
-            <p style="margin-top: -20px"><b>Образование:</b> Санкт-Петербургский государственный университет телекоммуникаций им. проф. М.А.Бонч-Бруевича</p>
-            <p>  ➥  <b>Период обучения:</b> 2020 - 2024 гг.</p>
-            <p>  ➥  <b>Факультет:</b> Системы обработки информации и управления, Информатика и вычислительная техника.</p>
-            <p>  ➥  <b>Специальность:</b> Информатика и вычислительная техника.</p>
-            <p><b>Ключевые навыки:</b><span class="badge badge-dark" style="background-color: black; color: white; margin-left: 3px;">Черный пояс в поисковой системе Google</span> </p> 
-            <p><b>О себе:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <p style="margin-top: -20px"><b>Образование:</b> - </b> - </p>
+            <p>  ➥  <b>Факультет:</b> - </p>
+            <p>  ➥  <b>Специальность:</b> - </p>
+            <p><b>Ключевые навыки:</b><span class="badge badge" style="background-color: black; color: white; margin-left: 3px;">Черный пояс по поиску информации в поисковой системе Google</span> <span class="badge badge" style="background-color:#F16529; color: white; margin-left: 3px;">HTML5</span> <span class="badge badge" style="background-color:#389CD7; color: white; margin-left: 3px;">CSS3</span> <span class="badge badge" style="background-color:#F7DF1E; color: black; margin-left: 3px;">JavaScript</span> <span class="badge badge" style="background-color:#777BB3; color: black; margin-left: 3px; text-shadow: white 1px 1px 0, white -1px -1px 0, white -1px 1px 0, white 1px -1px 0;">PHP</span> <span class="badge badge" style="background-color:#563D7C; color: white; margin-left: 3px;">Bootstrap v3-v4.4.1</span> <span class="badge badge" style="background-color:#0098DD; color: white; margin-left: 3px;">Wordpress</span> <span class="badge badge" style="background-color:#DE4C36; color: white; margin-left: 3px;">Git Bash</span> <span class="badge badge" style="background-color:#004482; color: white; margin-left: 3px;">C++/OПП/STL</span> <span class="badge badge" style="background-color:#0186B1; color: white; margin-left: 3px;">Delphi 7/Object pascal</span> </p>
+
+            <p><b>GitHub:</b> <a href="https://github.com/ant0nchikov" style="color: #9D3DA8; font-family: 'Russo One', serif;" >https://github.com/ant0nchikov</a></p>
+
+
+
+            <p><b>О себе:</b> 11010000 10010111 11010000 10110100 11010000 10110101 11010001 10000001 11010001 10001100 100000 11010000 10111111 11010000 10111110 11010000 10111010 11010000 10110000 100000 11010000 10111101 11010000 10111000 11010001 10000111 11010000 10110101 11010000 10110011 11010000 10111110 100000 11010000 10111101 11010000 10110101 11010001 10000010 100001 100000 11010000 10011101 11010000 10111110 100000 11010001 10000001 11010000 10111010 11010000 10111110 11010001 10000000 11010000 10111110 100000 11010000 10110001 11010001 10000011 11010000 10110100 11010000 10110101 11010001 10000010 101110.
+
+              <p>Декодирование - <a href="https://decodeit.ru/binary">тут</a></p>
           </p> 
             </div>
           </div>
@@ -471,13 +514,15 @@
 
 
       <footer>
-        <p style="font-family: 'Russo One', serif;">© Aleksandr Antonchikov 2019, Saint Petersburg, All Right Reserved.</p>
+        <p style="font-family: 'Russo One', serif;">© Aleksandr Antonchikov, ant0nchikov.pro 2019-2020, Saint Petersburg, All Right Reserved.</p>
       </footer> 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>  
-    <script src="./js/jquery.min.js"></script>
+    <script src="<?php bloginfo('template_directory') ?>/js/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/js.js"></script>
+    <script src="<?php bloginfo('template_directory') ?>/js/bootstrap.min.js"></script>
+    <script src="<?php bloginfo('template_directory') ?>/js/js.js"></script>
   
 </body></html>   
+
+<!--Привет! Если ты заглянул сюда и увидел весь этот пиздец, то знай - это произведение искусства! Да, у меня HTML, CSS и JS в одном файле, да так не делают, но, не делают в сайтах на заказ! (Т.к. если его нужно будет изменить или поправить, другому разработчику будет сложно, а то и вовсе невозможно разобраться в коде.) Этот сайт был сделан не на заказ, его я делал для СЕБЯ, как Я хочу, и да, если тебе что-то не нравится или не устраивает - свали нахуй отсюда и не заходи сюда больше!-->
